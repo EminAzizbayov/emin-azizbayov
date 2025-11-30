@@ -29,6 +29,13 @@ body.Home::before {
   opacity: 0.3;
 }
 
+/* Fix background-attachment on mobile devices */
+@media (max-width: 768px) {
+  body.Home::before {
+    background-attachment: scroll;
+  }
+}
+
 /* Static gradient overlay that fades the bottom of the GIF */
 body.Home::after {
   content: '';
@@ -73,6 +80,12 @@ html {
   scroll-padding-top: 100px;
 }
 
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 80px;
+  }
+}
+
 
 .navbar {
   position: fixed;
@@ -87,6 +100,12 @@ html {
   align-items: center;
   overflow: visible;
   z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 60px;
+  }
 }
 
 .nav-container {
@@ -119,6 +138,17 @@ html {
   object-fit: contain;
 }
 
+@media (max-width: 768px) {
+  .logo-img {
+    height: 60px;
+  }
+  
+  .nav-logo {
+    left: 10px;
+    height: 60px;
+  }
+}
+
 
 
 
@@ -138,6 +168,20 @@ html {
   transition: color 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+  
+  .nav-container {
+    padding: 0 2%;
+  }
+}
+
 .nav-links a:hover {
   color: #4da8ff;
 }
@@ -149,6 +193,15 @@ main {
   margin: 40px auto;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 95%;
+    margin: 20px auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .footer {
@@ -199,12 +252,17 @@ main {
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    margin: 40px 0 20px 0;
+  }
+  
   .hero-name {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
   }
 
   .hero-intro {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -216,6 +274,13 @@ main {
   padding: 0 20px;
   position: relative;
   z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    margin: 40px auto;
+    padding: 0 15px;
+  }
 }
 
 .intro-bold {
@@ -272,6 +337,15 @@ section {
   font-size: 1.5rem;
   position: relative;
   z-index: 10;
+}
+
+@media (max-width: 768px) {
+  section {
+    margin-top: 60px;
+    padding: 60px 0;
+    min-height: auto;
+    font-size: 1.2rem;
+  }
 }
 
 

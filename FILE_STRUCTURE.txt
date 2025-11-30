@@ -1,0 +1,29 @@
+Website Portfolio File Structure
+==================================
+
+website-portfolio/
+├── _config.yml
+├── _layouts/
+│   └── default.html
+├── _includes/
+│   ├── navbar.html
+│   └── footer.html
+├── assets/
+│   └── style.css
+├── index.markdown
+├── about.markdown
+├── projects.markdown
+├── 404.html
+├── Gemfile
+└── Gemfile.lock
+
+Optional files/directories:
+├── _posts/
+│   └── (blog posts if needed)
+├── assets/
+│   ├── css/
+│   ├── images/
+│   └── js/
+└── .gitignore
+
+

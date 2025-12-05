@@ -85,12 +85,19 @@ body.Home main {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 0; /* No padding on initial load */
+}
+
+/* Apply margin for anchor links to account for fixed navbar */
+section[id],
+div[id] {
+  scroll-margin-top: 75px; /* Navbar height (70px) + 5px spacing */
 }
 
 @media (max-width: 768px) {
-  html {
-    scroll-padding-top: 80px;
+  section[id],
+  div[id] {
+    scroll-margin-top: 65px; /* Navbar height (60px) + 5px spacing */
   }
 }
 
@@ -194,7 +201,7 @@ html {
   color: #4da8ff;
 }
 
-/* ===== MAIN CONTENT WRAPPER ===== */
+
 main {
   width: 90%;
   max-width: 900px;

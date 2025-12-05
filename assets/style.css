@@ -312,19 +312,18 @@ main {
 
 /* ===== PROFILE PIC ===== */
 .profile-picture {
-  width: 350px;
-  height: 350px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto 30px auto;
   display: block;
-  box-shadow: 0 4px 15px rgba(0, 179, 255, 0.3);
 }
 
 @media (max-width: 768px) {
   .profile-picture {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 }
 

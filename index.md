@@ -45,21 +45,40 @@ class: Home
             </div>
          </a>
       </div>
+      <div class="project-box">
+         <a href="https://github.com/EminAzizbayov/python_projects" target="_blank" rel="noopener noreferrer" class="project-link">
+            <div class="project-image">
+               <img src="{{ '/assets/images/pythonprojects.png' | relative_url }}" alt="Python Projects">
+            </div>
+            <div class="project-content">
+               <h3 class="project-title">Python Projects Collection</h3>
+               <p class="project-description">A collection of Python projects including password manager, quiz games, hangman, and more.</p>
+            </div>
+         </a>
+      </div>
    </div>
 </section>
 
 <section id="about">
    <h2>About Me</h2>
    <div class="about-content">
-      <p>Hi, I'm Emin, a Computer Science student with a strong passion for technology, creativity, and building things that make an impact. I love turning ideas into real projects — whether it's developing websites, solving problems with code, or creating high-quality digital content.</p>
+      <p class="about-intro">Hi, I'm <span class="highlight">Emin</span>, a Computer Science student passionate about <span class="highlight">technology</span>, <span class="highlight">problem-solving</span>, and building real projects. I enjoy developing websites, writing code, and creating polished digital content.</p>
       
-      <p>I'm currently studying at ADA University, where I focus on programming, information systems, and analytical thinking. Outside of my coursework, I dedicate time to improving my skills in Python, web development, and video editing, and I've completed more than ten personal coding projects so far.</p>
+      <p>I'm currently studying at <span class="highlight">ADA University</span> and improving my skills in Python, web development, and information systems. So far, I've completed multiple personal coding projects and constantly challenge myself to learn and grow.</p>
       
-      <p>I'm always striving to grow — to learn faster, create better, and challenge myself with new opportunities. My goal is to build a strong foundation in tech and eventually develop innovative projects that can reach thousands of people.</p>
+      <p class="about-goal">My long-term goal is to build innovative tech products and make a meaningful impact through what I create.</p>
    </div>
 </section>
 
 <section id="contact">
    <h2>Contact</h2>
-   <!-- your contact info -->
+   <div class="contact-content">
+      <p class="contact-intro">Got any ideas or just want to say hi?</p>
+      <div class="contact-email">
+         <a href="mailto:eazizbayov25963@ada.edu.az" class="email-link">
+            <span class="email-icon">✉</span>
+            <span class="email-text">eazizbayov25963@ada.edu.az</span>
+         </a>
+      </div>
+   </div>
 </section>

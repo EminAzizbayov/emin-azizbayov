@@ -17,6 +17,19 @@ class: Home
     <p class="intro-bold">A passionate <strong>coder</strong>, <strong>video editor</strong>, and <strong>learner</strong>.</p>
 </div>
 
+<div class="social-links">
+    <div class="github-link">
+        <a href="https://github.com/EminAzizbayov/website-portfolio" target="_blank" rel="noopener noreferrer">
+            <img src="{{ '/assets/images/GitHub-Logo.png' | relative_url }}" alt="GitHub" class="github-logo">
+        </a>
+    </div>
+    <div class="codecademy-link">
+        <a href="https://www.codecademy.com/profiles/eminazizbayov" target="_blank" rel="noopener noreferrer">
+            <img src="{{ '/assets/images/Codecademy-Logo.png' | relative_url }}" alt="Codecademy" class="codecademy-logo">
+        </a>
+    </div>
+</div>
+
 <div class="scroll-indicator">
     <img src="{{ '/assets/images/arrow.gif' | relative_url }}" alt="Scroll down" class="scroll-arrow">
 </div>

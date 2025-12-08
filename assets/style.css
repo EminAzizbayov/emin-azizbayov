@@ -246,7 +246,7 @@ main {
 /* ===== HERO SECTION ===== */
 .hero-section {
   text-align: center;
-  margin: -20px 0 40px 0;
+  margin: 40px 0 40px 0;
   position: relative;
   z-index: 10;
 }
@@ -268,7 +268,7 @@ main {
 
 @media (max-width: 768px) {
   .hero-section {
-    margin: -10px 0 20px 0;
+    margin: 20px 0 20px 0;
   }
   
   .hero-name {
@@ -285,7 +285,7 @@ main {
 .about-text {
   text-align: center;
   max-width: 700px;
-  margin: 10px auto;
+  margin: 30px auto;
   padding: 0 20px;
   position: relative;
   z-index: 10;
@@ -293,7 +293,7 @@ main {
 
 @media (max-width: 768px) {
   .about-text {
-    margin: 5px auto;
+    margin: 20px auto;
     padding: 0 15px;
   }
 }
@@ -324,6 +324,170 @@ main {
 @media (max-width: 768px) {
   .intro-bold { font-size: 1.1rem; }
   .intro-description { font-size: 1rem; }
+}
+
+/* ===== SOCIAL LINKS ===== */
+.social-links {
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ===== GITHUB LOGO ===== */
+.github-link {
+  position: relative;
+  display: inline-block;
+}
+
+.github-link a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.github-logo {
+  width: 40px;
+  height: auto;
+  display: inline-block;
+  filter: invert(1);
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.github-link a:hover .github-logo {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Tooltip */
+.github-link a::before {
+  content: 'GitHub Repo';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  background-color: #1f1e1e;
+  color: #f2f2f2;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.github-link a::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2px;
+  border: 5px solid transparent;
+  border-top-color: #1f1e1e;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.github-link a:hover::before,
+.github-link a:hover::after {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .github-logo {
+    width: 35px;
+  }
+  
+  .social-links {
+    gap: 15px;
+  }
+}
+
+/* ===== CODECADEMY LOGO ===== */
+.codecademy-link {
+  position: relative;
+  display: inline-block;
+}
+
+.codecademy-link a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.codecademy-logo {
+  width: 40px;
+  height: auto;
+  display: inline-block;
+  filter: invert(1);
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.codecademy-link a:hover .codecademy-logo {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Tooltip */
+.codecademy-link a::before {
+  content: 'Codecademy';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  background-color: #1f1e1e;
+  color: #f2f2f2;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.codecademy-link a::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2px;
+  border: 5px solid transparent;
+  border-top-color: #1f1e1e;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.codecademy-link a:hover::before,
+.codecademy-link a:hover::after {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .codecademy-logo {
+    width: 35px;
+  }
 }
 
 /* ===== SCROLL INDICATOR ===== */

@@ -6,6 +6,14 @@
   font-style: normal;
 }
 
+/* Custom Font - Arial CE for Navbar */
+@font-face {
+  font-family: 'Arial CE';
+  src: url('/website-portfolio/assets/fonts/ArialCE.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: #0D1116;
   color: #f2f2f2;
@@ -181,6 +189,7 @@ div[id] {
   font-weight: 600;
   font-size: 1.1rem;
   transition: color 0.3s ease;
+  font-family: 'Arial CE', Arial, sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -246,7 +255,7 @@ main {
 /* ===== HERO SECTION ===== */
 .hero-section {
   text-align: center;
-  margin: 40px 0 40px 0;
+  margin: 80px 0 40px 0;
   position: relative;
   z-index: 10;
 }
@@ -268,7 +277,7 @@ main {
 
 @media (max-width: 768px) {
   .hero-section {
-    margin: 20px 0 20px 0;
+    margin: 40px 0 20px 0;
   }
   
   .hero-name {
@@ -285,7 +294,7 @@ main {
 .about-text {
   text-align: center;
   max-width: 700px;
-  margin: 30px auto;
+  margin: 60px auto 20px auto;
   padding: 0 20px;
   position: relative;
   z-index: 10;
@@ -293,7 +302,7 @@ main {
 
 @media (max-width: 768px) {
   .about-text {
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 0 15px;
   }
 }
@@ -329,7 +338,7 @@ main {
 /* ===== SOCIAL LINKS ===== */
 .social-links {
   text-align: center;
-  margin: 20px auto;
+  margin: 10px auto;
   position: relative;
   z-index: 10;
   display: flex;
@@ -406,16 +415,6 @@ main {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
-  .github-logo {
-    width: 35px;
-  }
-  
-  .social-links {
-    gap: 15px;
-  }
-}
-
 /* ===== CODECADEMY LOGO ===== */
 .codecademy-link {
   position: relative;
@@ -485,15 +484,20 @@ main {
 }
 
 @media (max-width: 768px) {
+  .github-logo,
   .codecademy-logo {
     width: 35px;
+  }
+  
+  .social-links {
+    gap: 15px;
   }
 }
 
 /* ===== SCROLL INDICATOR ===== */
 .scroll-indicator {
   text-align: center;
-  margin: 170px 0 60px 0;
+  margin: 80px 0 60px 0;
   position: relative;
   z-index: 10;
 }
@@ -532,27 +536,19 @@ main {
 }
 
 /* ===== PROFILE PIC ===== */
-.profile-container {
-  text-align: center;
-  margin: 60px auto 0 auto;
-  position: relative;
-  z-index: 10;
-}
-
 .profile-picture {
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 30px auto 25px auto;
+  margin: 0 auto 30px auto;
   display: block;
 }
 
 @media (max-width: 768px) {
   .profile-picture {
-    width: 160px;
-    height: 160px;
-    margin: 0 auto 20px auto;
+    width: 200px;
+    height: 200px;
   }
 }
 

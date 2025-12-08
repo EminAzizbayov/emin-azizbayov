@@ -4,11 +4,8 @@ title: Home
 class: Home
 ---
 
-<div class="profile-container">
-    <img src="{{ '/assets/images/IMG_0523.png' | relative_url }}" alt="Emin Azizbayov" class="profile-picture">
-</div>
-
 <div class="hero-section" id="home">
+<img src="{{ '/assets/images/IMG_0523.png' | relative_url }}" alt="Emin Azizbayov" class="profile-picture">
     <h1 class="hero-name">Emin Azizbayov</h1>
 </div>
 

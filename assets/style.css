@@ -47,6 +47,13 @@ body {
   padding: 0;
   font-family: 'TikTok Sans', sans-serif;
   position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* ===== HOMEPAGE BACKGROUND EFFECTS ===== */
@@ -76,6 +83,23 @@ body.Home::before {
 @media (max-width: 768px) {
   body.Home::before {
     background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    height: 100vh;
+    min-height: 100%;
+  }
+  
+  body.Home::after {
+    position: absolute;
+    height: 100vh;
+    min-height: 100%;
+  }
+  
+  body.Home .scroll-overlay {
+    position: absolute;
+    height: 100vh;
+    min-height: 100%;
   }
 }
 
@@ -221,15 +245,26 @@ div[id] {
 
 @media (max-width: 768px) {
   .nav-links {
-    gap: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .nav-links a {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    padding: 5px 8px;
+    white-space: nowrap;
   }
   
   .nav-container {
     padding: 0 2%;
+    flex-wrap: wrap;
+  }
+  
+  .nav-logo {
+    position: relative;
+    left: auto;
+    margin-right: 10px;
   }
 }
 
@@ -248,10 +283,12 @@ main {
 
 @media (max-width: 768px) {
   main {
-    width: 95%;
-    margin: 20px auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 }
 
@@ -304,12 +341,16 @@ main {
 
 @media (max-width: 768px) {
   .hero-section {
-    margin: 40px 0 20px 0;
+    margin: 30px 0 20px 0;
+    padding: 0 10px;
   }
   
   .hero-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: 1px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    padding: 0 10px;
   }
 
   .hero-intro {
@@ -329,8 +370,9 @@ main {
 
 @media (max-width: 768px) {
   .about-text {
-    margin: 40px auto;
+    margin: 30px auto 20px auto;
     padding: 0 15px;
+    max-width: 100%;
   }
 }
 
@@ -358,8 +400,17 @@ main {
 }
 
 @media (max-width: 768px) {
-  .intro-bold { font-size: 1.1rem; }
-  .intro-description { font-size: 1rem; }
+  .intro-bold { 
+    font-size: 1rem; 
+    line-height: 1.4;
+    padding: 0 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .intro-description { 
+    font-size: 0.95rem; 
+    padding: 0 10px;
+  }
 }
 
 /* ===== SOCIAL LINKS ===== */
@@ -574,8 +625,9 @@ main {
 
 @media (max-width: 768px) {
   .profile-picture {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px auto;
   }
 }
 
@@ -598,15 +650,17 @@ section h2 {
 
 @media (max-width: 768px) {
   section {
-    margin-top: 60px;
-    padding: 60px 0;
+    margin-top: 40px;
+    padding: 40px 0;
     min-height: auto;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   
   section h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    word-wrap: break-word;
   }
 }
 
@@ -642,22 +696,32 @@ section h2 {
   width: 90%;
   height: auto;
   display: block;
-  margin: 20 auto;
+  margin: 20px auto;
 }
 
 @media (max-width: 768px) {
   .about-content {
     padding: 0 15px;
+    max-width: 100%;
   }
   
   .about-content p {
-    font-size: 1.15rem;
-    line-height: 1.9;
-    margin-bottom: 30px;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
   
   .programming-languages-image {
-    margin-top: 40px;
+    margin-top: 30px;
+  }
+  
+  .programming-languages-image img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -742,21 +806,32 @@ section h2 {
 @media (max-width: 768px) {
   .contact-content {
     padding: 0 15px;
+    max-width: 100%;
   }
   
   .contact-intro {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    padding: 0 10px;
+    word-wrap: break-word;
   }
   
   .email-link {
-    padding: 15px 28px;
-    font-size: 1rem;
-    gap: 12px;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .email-text {
+    word-break: break-all;
+    font-size: 0.9rem;
   }
   
   .email-icon {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -847,20 +922,31 @@ section h2 {
 @media (max-width: 768px) {
   .projects-container {
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 20px;
     padding: 0 15px;
+    max-width: 100%;
+  }
+  
+  .project-box {
+    max-width: 100%;
+    margin: 0;
   }
   
   .project-content {
-    padding: 18px;
+    padding: 15px;
   }
   
   .project-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .project-description {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    word-wrap: break-word;
   }
 }
 
